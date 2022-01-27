@@ -1,0 +1,13 @@
+{
+    "request": {
+      "userAttributes": {
+        "sub": "f198fe70-862c-405b-a4de-56e3c53fbd09",
+        "cognito:token_nbf": "1623267425405",
+        "email_verified": "true",
+        "cognito:user_status": "CONFIRMED",
+        "cognito:email_alias": "johnpatrickreilly@gmail.com",
+        "email": "johnpatrickreilly@gmail.com"
+      }
+    },
+    "response": {}
+  }

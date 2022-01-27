@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "auth": {
+      "authplayercards": [
+        "read"
+      ]
+    },
+    "storage": {
+      "players": [
+        "read",
+        "update"
+      ],
+      "leagues": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "playercardslayer",
+      "version": 1
+    }
+  ]
+}

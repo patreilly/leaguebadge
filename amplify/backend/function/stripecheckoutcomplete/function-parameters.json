@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "storage": {
+      "players": [
+        "read",
+        "update"
+      ],
+      "leagues": [
+        "read"
+      ],
+      "programs": [
+        "read"
+      ],
+      "memberships": [
+        "read"
+      ],
+      "members": [
+        "create",
+        "read",
+        "update"
+      ],
+      "memberhistory": [
+        "create",
+        "read",
+        "update"
+      ],
+      "stripecheckoutsessions": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "stripelayer",
+      "version": 1
+    },
+    {
+      "type": "ProjectLayer",
+      "resourceName": "playercardslayer",
+      "version": 1
+    }
+  ]
+}

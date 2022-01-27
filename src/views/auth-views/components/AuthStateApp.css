@@ -1,0 +1,38 @@
+:root {
+  --themeColor: rgb(62, 121, 247);
+  --hoverColor: rgb(62, 121, 247);
+  --amplify-primary-color: rgb(62, 121, 247);
+  --amplify-primary-tint: rgb(62, 121, 247); 
+  --amplify-primary-shade: rgb(62, 121, 247);
+  --amplify-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(27, 37, 49);
+}
+
+amplify-authenticator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+    background-color: rgb(27, 37, 49);
+  }
+
+amplify-sign-out {
+  /* display: flex; */
+  /* justify-content: left; */
+  align-items: left;
+  padding-left: 0px;
+  /* flex: 1; */
+  
+}
+
+button amplify-sign-out  {
+  min-width: fit-content;
+  /* text-transform: none; */
+}
+
+:root amplify-sign-out {
+  --amplify-primary-color: transparent;
+  --amplify-primary-contrast: rgb(180, 190, 210);
+  --text-transform: none;
+}

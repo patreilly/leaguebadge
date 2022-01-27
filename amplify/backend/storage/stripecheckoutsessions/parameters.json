@@ -1,0 +1,5 @@
+{
+    "tableName": "stripecheckoutsessions",
+    "partitionKeyName": "cs_id",
+    "partitionKeyType": "S"
+}

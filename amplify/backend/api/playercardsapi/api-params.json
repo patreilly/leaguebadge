@@ -1,0 +1,395 @@
+{
+    "paths": [
+        {
+            "name": "/player/{id}",
+            "lambdaFunction": "getplayer",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            },
+            "policyResourceName": "/player/*"
+        },
+        {
+            "name": "/profile/{id}",
+            "lambdaFunction": "profile",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ],
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST",
+                        "/GET",
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/profile/*"
+        },
+        {
+            "name": "/memberships",
+            "lambdaFunction": "memberships",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/GET"
+                ],
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/GET"
+                    ]
+                }
+            },
+            "policyResourceName": "/memberships"
+        },
+        {
+            "name": "/admin/league/{leagueid}",
+            "lambdaFunction": "adminleague",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST",
+                        "/GET",
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/league/*"
+        },
+        {
+            "name": "/admin/program/{programid}",
+            "lambdaFunction": "adminprogram",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST",
+                        "/GET",
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/program/*"
+        },
+        {
+            "name": "/admin/membership/{membershipid}",
+            "lambdaFunction": "adminmembership",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST",
+                        "/GET",
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/membership/*"
+        },
+        {
+            "name": "/admin/memberships",
+            "lambdaFunction": "adminmemberships",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/GET"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/memberships"
+        },
+        {
+            "name": "/pay/stripe/session",
+            "lambdaFunction": "paycreatecheckout",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST"
+                ],
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST"
+                    ]
+                }
+            },
+            "policyResourceName": "/pay/stripe/session"
+        },
+        {
+            "name": "/admin/profile/deny",
+            "lambdaFunction": "adminprofiledeny",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/profile/deny"
+        },
+        {
+            "name": "/pay/stripe/checkoutcompleted",
+            "lambdaFunction": "stripecheckoutcomplete",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/pay/stripe/checkoutcompleted"
+        },
+        {
+            "name": "/member/{id}",
+            "lambdaFunction": "member",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/POST",
+                        "/GET",
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/member/*"
+        },
+        {
+            "name": "/admin/members",
+            "lambdaFunction": "adminmembers",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/GET"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/members"
+        },
+        {
+            "name": "/admin/member/{memberid}",
+            "lambdaFunction": "adminmember",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/GET",
+                        "/PUT",
+                        "/PATCH",
+                        "/DELETE"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/member/*"
+        },
+        {
+            "name": "/admin/profile/approve",
+            "lambdaFunction": "adminprofileapprove",
+            "privacy": {
+                "userPoolGroups": {
+                    "leagueadmins": [
+                        "/PUT",
+                        "/PATCH"
+                    ]
+                }
+            },
+            "policyResourceName": "/admin/profile/approve"
+        }
+    ],
+    "resourceName": "playercardsapi",
+    "apiName": "playercardsapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "getplayer"
+        },
+        {
+            "lambdaFunction": "profile"
+        },
+        {
+            "lambdaFunction": "memberships"
+        },
+        {
+            "lambdaFunction": "adminleague"
+        },
+        {
+            "lambdaFunction": "adminprogram"
+        },
+        {
+            "lambdaFunction": "adminmembership"
+        },
+        {
+            "lambdaFunction": "adminmemberships"
+        },
+        {
+            "lambdaFunction": "paycreatecheckout"
+        },
+        {
+            "lambdaFunction": "adminprofiledeny"
+        },
+        {
+            "lambdaFunction": "stripecheckoutcomplete"
+        },
+        {
+            "lambdaFunction": "member"
+        },
+        {
+            "lambdaFunction": "adminmembers"
+        },
+        {
+            "lambdaFunction": "adminmember"
+        },
+        {
+            "lambdaFunction": "adminprofileapprove"
+        }
+    ],
+    "privacy": {
+        "auth": 5,
+        "unauth": 0,
+        "authRoleName": "amplify-playercards-dev-221236-authRole",
+        "unAuthRoleName": "amplify-playercards-dev-221236-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getplayer",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "profile",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "auth",
+            "resourceName": "authplayercards",
+            "attributes": [
+                "UserPoolId"
+            ]
+        },
+        {
+            "category": "auth",
+            "resourceName": "userPoolGroups",
+            "attributes": [
+                "leagueadminsGroupRole"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "memberships",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminleague",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminprogram",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminmembership",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminmemberships",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "paycreatecheckout",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminprofiledeny",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "stripecheckoutcomplete",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "member",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminmembers",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminmember",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "adminprofileapprove",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "22b9551e",
+    "authResourceName": "authplayercards"
+}

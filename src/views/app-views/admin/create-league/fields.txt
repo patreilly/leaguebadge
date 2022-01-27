@@ -1,0 +1,12 @@
+league name
+About the league
+sports category
+website
+address 1
+address 2
+City
+State
+Zip
+Contact Name
+Public?
+Active?

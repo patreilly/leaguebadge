@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "storage": {
+      "players": [
+        "read",
+        "update"
+      ],
+      "leagues": [
+        "read"
+      ],
+      "playerphotos": [
+        "delete"
+      ],
+      "programs": [
+        "read"
+      ],
+      "memberships": [
+        "read"
+      ],
+      "members": [
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "playercardslayer",
+      "version": 1
+    }
+  ]
+}

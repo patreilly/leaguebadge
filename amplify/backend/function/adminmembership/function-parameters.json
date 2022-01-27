@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "storage": {
+      "programs": [
+        "read",
+        "update"
+      ],
+      "memberships": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "playercardslayer",
+      "version": 1
+    }
+  ]
+}

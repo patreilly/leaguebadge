@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "storage": {
+      "players": [
+        "read"
+      ],
+      "leagues": [
+        "read"
+      ],
+      "programs": [
+        "read"
+      ],
+      "memberships": [
+        "read"
+      ],
+      "members": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "stripecheckoutsessions": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "stripelayer",
+      "version": 1
+    }
+  ]
+}

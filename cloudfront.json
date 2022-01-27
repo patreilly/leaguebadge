@@ -1,0 +1,131 @@
+{
+    "ETag": "E2BX0WAYC2JFQD",
+    "Distribution": {
+        "Id": "E2YON6OAA1BJ39",
+        "ARN": "arn:aws:cloudfront::304417797535:distribution/E2YON6OAA1BJ39",
+        "Status": "Deployed",
+        "LastModifiedTime": "2021-06-11T19:39:51.419000+00:00",
+        "InProgressInvalidationBatches": 0,
+        "DomainName": "dzvkegrlgy0a.cloudfront.net",
+        "ActiveTrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "ActiveTrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "DistributionConfig": {
+            "CallerReference": "1619046708329",
+            "Aliases": {
+                "Quantity": 0
+            },
+            "DefaultRootObject": "",
+            "Origins": {
+                "Quantity": 2,
+                "Items": [
+                    {
+                        "Id": "S3-playerphotos-2349308221236-dev/cloudfront",
+                        "DomainName": "playerphotos-2349308221236-dev.s3.amazonaws.com",
+                        "OriginPath": "/cloudfront",
+                        "CustomHeaders": {
+                            "Quantity": 0
+                        },
+                        "S3OriginConfig": {
+                            "OriginAccessIdentity": "origin-access-identity/cloudfront/E2QHAFHRDZ8MC7"
+                        },
+                        "ConnectionAttempts": 3,
+                        "ConnectionTimeout": 10,
+                        "OriginShield": {
+                            "Enabled": false
+                        }
+                    },
+                    {
+                        "Id": "S3-playerphotos-2349308221236-dev/public",
+                        "DomainName": "playerphotos-2349308221236-dev.s3.amazonaws.com",
+                        "OriginPath": "/public",
+                        "CustomHeaders": {
+                            "Quantity": 0
+                        },
+                        "S3OriginConfig": {
+                            "OriginAccessIdentity": "origin-access-identity/cloudfront/E1NUJE4WJ87D3M"
+                        },
+                        "ConnectionAttempts": 3,
+                        "ConnectionTimeout": 10,
+                        "OriginShield": {
+                            "Enabled": false
+                        }
+                    }
+                ]
+            },
+            "OriginGroups": {
+                "Quantity": 0
+            },
+            "DefaultCacheBehavior": {
+                "TargetOriginId": "S3-playerphotos-2349308221236-dev/public",
+                "TrustedSigners": {
+                    "Enabled": false,
+                    "Quantity": 0
+                },
+                "TrustedKeyGroups": {
+                    "Enabled": false,
+                    "Quantity": 0
+                },
+                "ViewerProtocolPolicy": "redirect-to-https",
+                "AllowedMethods": {
+                    "Quantity": 2,
+                    "Items": [
+                        "HEAD",
+                        "GET"
+                    ],
+                    "CachedMethods": {
+                        "Quantity": 2,
+                        "Items": [
+                            "HEAD",
+                            "GET"
+                        ]
+                    }
+                },
+                "SmoothStreaming": false,
+                "Compress": true,
+                "LambdaFunctionAssociations": {
+                    "Quantity": 0
+                },
+                "FunctionAssociations": {
+                    "Quantity": 0
+                },
+                "FieldLevelEncryptionId": "",
+                "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+            },
+            "CacheBehaviors": {
+                "Quantity": 0
+            },
+            "CustomErrorResponses": {
+                "Quantity": 0
+            },
+            "Comment": "",
+            "Logging": {
+                "Enabled": true,
+                "IncludeCookies": false,
+                "Bucket": "cloudfront-logs-2342039234.s3.amazonaws.com",
+                "Prefix": "leaguebadgecloudfront/"
+            },
+            "PriceClass": "PriceClass_All",
+            "Enabled": true,
+            "ViewerCertificate": {
+                "CloudFrontDefaultCertificate": true,
+                "MinimumProtocolVersion": "TLSv1",
+                "CertificateSource": "cloudfront"
+            },
+            "Restrictions": {
+                "GeoRestriction": {
+                    "RestrictionType": "none",
+                    "Quantity": 0
+                }
+            },
+            "WebACLId": "",
+            "HttpVersion": "http2",
+            "IsIPV6Enabled": true
+        }
+    }
+}

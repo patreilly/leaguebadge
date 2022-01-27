@@ -1,0 +1,112 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-playercards-dev-221236-authRole",
+      "UnauthRoleArn": "arn:aws:iam::304417797535:role/amplify-playercards-dev-221236-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::304417797535:role/amplify-playercards-dev-221236-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-playercards-dev-221236-deployment",
+      "UnauthRoleName": "amplify-playercards-dev-221236-unauthRole",
+      "StackName": "amplify-playercards-dev-221236",
+      "StackId": "arn:aws:cloudformation:us-west-2:304417797535:stack/amplify-playercards-dev-221236/ff1a1830-b929-11eb-a96d-02a2e5b7f82d",
+      "AmplifyAppId": "d1u6xt8ijsmtlz",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-playercards-dev-221236-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "authplayercards": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "authplayercardsPostConfirmation": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/authplayercardsPostConfirmation-4c5a38546e6378677333-build.zip"
+        },
+        "getplayer": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/getplayer-7a58585a4d6356433733-build.zip"
+        },
+        "adminprogram": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminprogram-634c6b56694f6753526a-build.zip"
+        },
+        "adminleague": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminleague-6d79714e66396c795051-build.zip"
+        },
+        "profile": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/profile-457069514b3176595235-build.zip"
+        },
+        "s3buckettrigger": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/s3buckettrigger-385836533165694a4b41-build.zip"
+        },
+        "playercardslayer": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/playercardslayer-build.zip"
+        },
+        "adminmembership": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminmembership-584754516f786857484f-build.zip"
+        },
+        "adminmemberships": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminmemberships-36357a70645a4c415051-build.zip"
+        },
+        "memberships": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/memberships-2f52657958764b52504a-build.zip"
+        },
+        "paycreatecheckout": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/paycreatecheckout-512b7451706f2b665473-build.zip"
+        },
+        "stripelayer": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/stripelayer-build.zip"
+        },
+        "member": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/member-77696f505959654e6e2f-build.zip"
+        },
+        "adminprofileapprove": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminprofileapprove-684a4c63752b52447574-build.zip"
+        },
+        "adminprofiledeny": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminprofiledeny-686734324b64544d6932-build.zip"
+        },
+        "playersTrigger076964d8": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/playersTrigger076964d8-46305239645350596177-build.zip"
+        },
+        "playerstabletrigger": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/playerstabletrigger-42416d564c5844715850-build.zip"
+        },
+        "memberstabletrigger": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/memberstabletrigger-35535172476a37356e33-build.zip"
+        },
+        "stripecheckoutcomplete": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/stripecheckoutcomplete-336337623537747a5663-build.zip"
+        },
+        "expirememberships": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/expirememberships-566c73474e354948664a-build.zip"
+        },
+        "adminmembers": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminmembers-6137694b4d5334395556-build.zip"
+        },
+        "adminmember": {
+          "deploymentBucketName": "amplify-playercards-dev-221236-deployment",
+          "s3Key": "amplify-builds/adminmember-575a6b646c6159583942-build.zip"
+        }
+      }
+    }
+  }
+}

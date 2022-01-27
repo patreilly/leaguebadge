@@ -1,0 +1,8 @@
+{
+  "groupPermissionMap": {
+    "leagueadmins": [
+      "create/update",
+      "read"
+    ]
+  }
+}

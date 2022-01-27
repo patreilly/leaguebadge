@@ -1,0 +1,26 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "authplayercards",
+  "functionName": "authplayercardsPostConfirmation",
+  "resourceName": "authplayercardsPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "authplayercardsPostConfirmation",
+  "skipEdit": true,
+  "enableCors": false,
+  "permissions": {
+    "storage": {
+      "players": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  }
+}
